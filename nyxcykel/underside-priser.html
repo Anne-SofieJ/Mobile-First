@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>X Cykel Rep</title>
 <meta name="author" content="Mikkel">
+<meta name= "viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style-underside-priser.css">
 <link rel="icon" type="image/x-icon" href="images-underside-priser/logo.png">
 </head>
@@ -56,23 +57,205 @@
 
  <main>
     <h1>PRISER</h1>
+    <!-- Computer-->
+    <div class="formecom">
+    <div class="orangeformcom"> <img src="images-underside-priser/orangeform-com.png" alt="Orange form"></div>
+    <div class="hvidformcom"> <img src="images-underside-priser/hvidform-com.png" alt="Hvid form"></div>
+    <div class="orangeform2com"><img src="images-underside-priser/orangeformhøjre-com.png" alt="Orange form"></div>
+    <div class="cykelhjulcom"><img src="images-underside-priser/cykelhjul-com.png" alt="Cykelhjul"></div>
+  </div>
+    <!-- Telefon-->
+    <div>
+      <img class="orangeform"src="images-underside-priser/orangeform.png" alt="Orange form">
+      <img class="penge" src="images-underside-priser/penge.png" alt="Penge">
+    </div>
     <div class="pris">
         <img class="cykelhjul" src="images-underside-priser/cykelhjul.png" alt="Cykelhjul">
-        <h2 class="tekst">Her er et uddrag af vores estimerede priser:</h2>
-        <img class="orangeform"src="images-underside-priser/orangeform.png" alt="Orange form">
-        <img class="penge" src="images-underside-priser/penge.png" alt="Penge">
-        <img class="prisliste" src="images-underside-priser/prisliste.png" alt="Prisliste">
+        <h2 class="tekst1">Her er et uddrag af vores estimerede priser:</h2>
+      </div>
+      <section class="priser">
+        <article>
+          <p>Klargøring forår/efterår:
+            <br>
+            <br>
+            Lapning:
+            <br>
+            <br>
+            Slange:
+            <br>
+            <br>
+            Dæk:
+            <br>
+            <br>
+            Gearkabel yder + inder:
+            <br>
+            <br>
+            Bremsekabel yder + inder:
+            <br>
+            <br>
+            Kæde + tandhjul:
+            <br>
+            <br>
+            Pedaler:
+            <br>
+            <br>
+            Nyt hjul bag:
+            <br>
+            <br>
+            Nyt hjul foran:
+            <br>
+            <br>
+            Bremseklodser:</p>
+          </article>
+        <article>
+          <p class="pr">185
+            <br>
+            <br>
+            75
+            <br>
+            <br>
+            195
+            <br>
+            <br>
+            450
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            800
+            <br>
+            <br>
+            700
+            <br>
+            <br>
+            550
+            <br>
+            <br>
+            </p>
+        </article>
+      </div>
+      <!-- Computer-->
+      <div class="prisercom">
+        <h2 class="pristekst">Her er et uddrag af vores estimerede priser:</h2>
+      <section class="priser1com">
+        <article>
+          <p>Klargøring forår/efterår:
+            <br>
+            <br>
+            Lapning:
+            <br>
+            <br>
+            Slange:
+            <br>
+            <br>
+            Dæk:
+            <br>
+            <br>
+            Gearkabel yder + inder:
+            <br>
+            <br>
+            Bremsekabel yder + inder:
+            <br>
+            <br>
+            Kæde + tandhjul:
+            <br>
+            <br>
+            Pedaler:
+            <br>
+            <br>
+            Nyt hjul bag:
+            <br>
+            <br>
+            Nyt hjul foran:
+            <br>
+            <br>
+            Bremseklodser:</p>
+          </article>
+        <article>
+          <p class="prcom">185
+            <br>
+            <br>
+            75
+            <br>
+            <br>
+            195
+            <br>
+            <br>
+            450
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            250
+            <br>
+            <br>
+            800
+            <br>
+            <br>
+            700
+            <br>
+            <br>
+            550
+            <br>
+            <br>
+            </p>
+        </article>
       </div>
 
+      <!-- Telefon-->
     <div class="udregne">
-      <img class="hvidform" src="images-underside-priser/hvidform.png" alt="Hvid form">
-      <h2 class="tekst">Her på siden har du også mulighed for at udregne en estimeret pris for reparation af din cykel:</h2>
+      <h2 class="tekst2">Her på siden har du også mulighed for at udregne en estimeret pris for reparation af din cykel:</h2>
     </div>
-  
+    
+    <div.row class="hvid">
+      <img class="hvidform" src="images-underside-priser/hvidform.png" alt="Hvid form">
+    </div.row>
+    
     <div>
     <form action="/action_page.php">
         <div class="container">
+          <label for="text"><h2 class="menupunkter">Cykelmærke?</h2></label>
+          <input type="text" name="text" required>
+      
+          <label for="text"><h2 class="menupunkter">Hvad skal du have lavet?</h2></label>
+          <input type="text" name="text" required>
           
+          <div class="clearfix">
+            <button type="submit" class="udregn">UDREGN</button>
+          </div>
+      </form>
+    </div>
+
+    <!-- Book tid knap på telefon-->
+    <div class="booktidknap">
+       <p>Book tid</p>
+    </div>
+
+    <!-- Computer-->
+    <div class="udregnecom">
+      <h2 class="tekst2com">Her på siden har du også mulighed for at udregne en estimeret pris for reparation af din cykel:</h2>
+    </div>
+    
+    <div class="menupunktercom">
+    <form action="/action_page.php">
+        <div class="containercom">
           <label for="text"><h2 class="menupunkter">Cykelmærke?</h2></label>
           <input type="text" name="text" required>
       
@@ -85,7 +268,6 @@
       </form>
     </div>
  </main>
-
 
 
 <!-- Footer starter-->

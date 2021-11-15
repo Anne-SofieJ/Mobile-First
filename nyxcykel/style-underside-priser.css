@@ -6,9 +6,9 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --orange: ##FEA808;
-  --red: ##F15A24;
-  --grey: ##D6D6D6;
+  --orange: #FEA808;
+  --red: #F15A24;
+  --grey: #D6D6D6;
 }
 
 /* Fonte - størrelse og design*/
@@ -21,14 +21,13 @@ h1 {
   font-size: 40px;
   font-weight: 400;
   text-align: center;
-  margin: 20%;
+  margin-top: 20%;
 }
 
 h2 {
   font-family: montserrat, sans-serif;
   font-size: 20px;
   font-weight: 400;
-  margin-top: 20%;
   margin-left:5%;
 }
 
@@ -38,7 +37,7 @@ h2 {
   font-weight: 400;
   margin-top: 20%;
   margin-left:5%;
-  width: 30ch;
+  width: 20ch;
   color: var(--black);
 }
 p {
@@ -173,6 +172,34 @@ body{
     #toggle:checked + .menu{
       display: block;
     }
+
+    .orangeformcom {
+      display: none;
+    }
+
+    .hvidformcom {
+      display: none;
+    }
+
+    .orangeform2com {
+      display: none;
+    }
+
+    .cykelhjulcom {
+      display: none;
+    }
+
+    .prisercom {
+      display: none;
+    }
+
+    .udregnecom {
+      display: none;
+    }
+
+    .containercom {
+      display: none;
+    }
   }
   
   /* Media rules for liggende ipad og web */
@@ -186,16 +213,153 @@ body{
       margin-top: 1%;
       font-size: 16px;
     }
-  
+
+  /* Nav bar */
     #findus{
-      width: 5%;
-      height: 4%;
       display: none;
     }
+
+  /* Indhold fra telefon fjernet*/
+  .cykelhjul{
+    display: none;
+  }
+
+  .hvid {
+    display: none;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .penge {
+    display: none;
+  }
+
+  .orangeform {
+    display: none;
+  }
+
+  .tekst1 {
+    display: none;
+  }
+
+  .tekst2 {
+    display: none;
+  }
+  
+  .priser {
+    display: none;
+  }
+
+  .pr {
+    display: none;
+  }
+  
+.booktid {
+  display: none;
+}
+
+.booktidknap {
+  display: none;
+}
+
+/* Indhold START Computer */
+  .formecom {
+    width: 100%;
+    height: auto;
+  }
+
+  .orangeform {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    z-index: -10;
+  }
+
+  .hvidformcom {
+    position: relative;
+    width: 80%;
+    right: 0;
+    z-index: 1;
+    margin-top: -45%;
+    margin-left: 10%;
+  } 
+
+  .orangeform2com {
+    position: absolute;
+    width: 32%;
+    right: 0;
+    z-index: -10;
+    margin-top: -50%;
+  }
+
+  .cykelhjulcom {
+    position: absolute;
+    right: 0;
+    height: auto;
+    z-index: -8;
+    margin-top: -44%;
+  }
+
+  .prisercom {
+    display: flex;
+    position: relative;
+  }
+
+  .pristekst {
+    position: relative;
+    width: 50%;
+    right: 50;
+    padding-left: 10%;
+    z-index: 1;
+    margin-top: -45%;
+  }
+  .priser1com {
+    position: absolute;
+    width: 50%;
+    right: 50;
+    padding-left: 15%;
+    height: auto;
+    z-index: 2;
+    margin-top: -40%;
+    columns: 2;
+  }
+
+  .menupunktercom {
+    display: flex;
+  }
+
+  .tekst2com {
+    position: absolute;
+    width: 80%;
+    right: 50;
+    padding-left: 55%;
+    height: auto;
+    z-index: 3;
+    margin-top: -45%;
+    width: 100ch;
+  }
+
+  .containercom {
+    position: absolute;
+    width: 80%;
+    padding-left: 60%;
+    height: auto;
+    z-index: 2;
+    margin-top: -40%;
+  }
+
+  .clearfix {
+    float: left;
+    width: 100%;
+  }
+
+  /* Footer */
     }
 
 
-/* INDHOLD START */
+/* INDHOLD START telefon */
 .pris {
   width: auto;
   height: auto;
@@ -203,35 +367,55 @@ body{
   top: 0;
   left: 0;
 }
-.prisliste{
-  position: relative;
-  width: 80%;
-  margin: 10%;
+
+.priser {
+  column-count: 2;
+  grid-row-start: auto;
+  padding: 10%;
+  width: 100%;
 }
+
+.pr {
+  float: right;
+  margin-bottom: 20%;
+}
+
+.section {
+  display: flex;
+}
+
+.article {
+  padding: 0 2em;
+}
+
 .cykelhjul {
   position: absolute;
   width: 40%;
 }
 
-.tekst {
+.tekst1 {
   padding: 5%;
+}
+.tekst2 {
+  padding: 5%;
+  margin-top: 60%;
 }
 
 .orangeform {
   position: absolute;
-  width: 40%;
+  width: 80%;
   right: 0;
-  padding-top: 15%;
+  padding-top: -90%;
+  z-index: -10;
 }
 
 .penge {
   position: absolute;
-  width: 40%;
+  width: 50%;
   right: 0;
-  padding-top: 30%;
   height: auto;
-  width: 200px;
-  bottom: 0;
+  z-index: -8;
+  margin-top: 180%;
 }
 
 .udregne{
@@ -242,16 +426,49 @@ body{
   left: 0;
 }
 
-.hvidform {
-  position: absolute;
-  width: 40%;
-  right:0;
-  padding-top: 15%;
-  height: auto;
-  width: 200px;
-  bottom: 0;
+.hvid {
+  width: 100%;
+  height: 30%;
 }
 
+.hvidform {
+  position: absolute;
+  width: 90%;
+  right: 0;
+  height: auto;
+  z-index: -10;
+  margin-top: -120%;
+}
+
+.menupunkter {
+  padding: 5%;
+}
+
+.booktidknap {
+  position: fixed;
+  background: #F15A24;
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  bottom: 10%;
+  right: 3%;
+  text-align: center;
+  box-shadow: 4px 4px 4px var(--grey);
+  cursor: pointer;
+  border-radius: 50px;
+  z-index: 10;
+}
+
+.booktidknap {
+  text-transform: uppercase;
+  font-family: montserrat, sans-serif;
+  font-weight: 900;
+  color: var(--black);
+}
+
+.booktidknap:active {
+box-shadow: 0 0;
+}
 
 /* Knapper til reparation*/
 /* Full-width input fields */
@@ -260,10 +477,10 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: none;
   background: #f1f1f1;
   border-radius: 50px;
   border: 20px;
+  border: 1px solid #FEA808;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -317,7 +534,7 @@ ul{
 }
 
 footer{
-  position: relative;
+  position: absolute;
   margin-top: auto;
   background-color: #FEA808;
   margin-top: auto;
