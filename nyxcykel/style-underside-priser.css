@@ -459,6 +459,11 @@ body{
   z-index: 10;
 }
 
+.booktidknap2 {
+  text-decoration: none;
+  list-style: none;
+  color: var(--black);
+}
 .booktidknap {
   text-transform: uppercase;
   font-family: montserrat, sans-serif;
